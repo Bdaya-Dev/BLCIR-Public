@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <RootNamespace>Bdaya.BLCIRM</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Bdaya.BLCIRM.MongoDB\Bdaya.BLCIRM.MongoDB.csproj" />
+    <ProjectReference Include="..\Bdaya.BLCIRM.TestBase\Bdaya.BLCIRM.TestBase.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.2.0" />
+    <PackageReference Include="Mongo2Go" Version="3.1.3" />
+  </ItemGroup>
+
+</Project>

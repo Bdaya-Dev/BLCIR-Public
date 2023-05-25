@@ -1,0 +1,29 @@
+targets:
+  $default:
+    builders:
+      injectable_generator:injectable_builder:
+        enabled: true
+        generate_for:
+          include:
+            - lib/**/controller.dart
+            - lib/src/services/**.dart
+            - lib/injectable.dart
+            - lib/injectable_module.dart
+      injectable_generator:injectable_config_builder:
+        enabled: true
+        generate_for:
+          include:
+            - lib/**/controller.dart
+            - lib/src/services/**.dart
+            - lib/injectable.dart
+            - lib/injectable_module.dart
+      json_serializable:
+        enabled: true
+        generate_for:
+          include:
+            - lib/src/models/**.dart            
+        options:
+          create_field_map: true
+          explicit_to_json: true
+          # checked: true
+          # any_map: true

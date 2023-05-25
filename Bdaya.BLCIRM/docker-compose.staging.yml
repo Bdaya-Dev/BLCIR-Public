@@ -1,0 +1,7 @@
+version: '3.4'
+
+services:
+  bdaya.blcirm.httpapi.host:
+    image: ${DOCKER_REGISTRY-}blcirm-server-staging
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Staging

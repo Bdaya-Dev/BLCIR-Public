@@ -1,0 +1,14 @@
+inputSpec: https://localhost:44391/swagger/v1/swagger.json
+# inputSpec: schema.json
+pubName: blcirm_api
+pubVersion: 0.1.0
+pubDescription: "BLCIRM Api Package"
+generatorName: dart-dio
+# templateDir: .templates
+# legacyDiscriminatorBehavior: true
+# additionalProperties:
+# systemProperties:
+  # skipValidateSpec: "false"
+# globalProperties:
+  # debugModels: true
+#   skipValidateSpec: "false"

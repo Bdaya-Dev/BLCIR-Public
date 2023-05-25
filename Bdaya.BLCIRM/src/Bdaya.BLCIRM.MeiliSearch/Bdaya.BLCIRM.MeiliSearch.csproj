@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\common.props" />
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="MeiliSearch" Version="0.14.0" />
+		<PackageReference Include="Volo.Abp.Core" Version="7.1.1" />
+		<PackageReference Include="Volo.Abp.Http.Client" Version="7.1.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Bdaya.BLCIRM.Domain\Bdaya.BLCIRM.Domain.csproj" />
+	</ItemGroup>
+
+</Project>

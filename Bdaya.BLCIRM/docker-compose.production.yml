@@ -1,0 +1,7 @@
+version: '3.4'
+
+services:
+  bdaya.blcirm.httpapi.host:
+    image: ${DOCKER_REGISTRY-}blcirm-server
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production

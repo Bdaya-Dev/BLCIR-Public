@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\common.props" />
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>		
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Content Include="appsettings.json">
+			<CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="appsettings.*.json">
+			<DependentUpon>appsettings.json</DependentUpon>
+			<CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Serilog.Extensions.Logging" Version="3.1.0" />
+		<PackageReference Include="Serilog.Sinks.Async" Version="1.5.0" />
+		<PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+		<PackageReference Include="Serilog.Sinks.Console" Version="4.0.1" />
+		<PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Volo.Abp.Autofac" Version="7.1.1" />
+		<ProjectReference Include="..\Bdaya.BLCIRM.Application.Contracts\Bdaya.BLCIRM.Application.Contracts.csproj" />
+		<ProjectReference Include="..\Bdaya.BLCIRM.Application.Mapping\Bdaya.BLCIRM.Application.Mapping.csproj" />
+		<ProjectReference Include="..\Bdaya.BLCIRM.MongoDB\Bdaya.BLCIRM.MongoDB.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Remove="Logs\**" />
+		<Content Remove="Logs\**" />
+		<EmbeddedResource Remove="Logs\**" />
+		<None Remove="Logs\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="appsettings.Debug.json" />
+	  <None Remove="appsettings.Development.json" />
+	  <None Remove="appsettings.Production.json" />
+	</ItemGroup>
+
+</Project>

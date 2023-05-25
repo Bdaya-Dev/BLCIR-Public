@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <RootNamespace>Bdaya.BLCIRM</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Bdaya.BLCIRM.Application\Bdaya.BLCIRM.Application.csproj" />
+    <ProjectReference Include="..\Bdaya.BLCIRM.Domain.Tests\Bdaya.BLCIRM.Domain.Tests.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.2.0" />
+  </ItemGroup>
+
+</Project>

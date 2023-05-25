@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  bdaya.blcirm.httpapi.host:
+    image: ${DOCKER_REGISTRY-}blcirm-server-debug
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Debug
+      - ASPNETCORE_URLS=https://+:443;http://+:80
+    ports:
+      - 43303:80
+      - 43302:443
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro

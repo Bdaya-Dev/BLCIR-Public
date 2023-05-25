@@ -1,0 +1,7 @@
+version: '3.4'
+
+services:
+  bdaya.blcirm.httpapi.host:    
+    build:
+      context: .
+      dockerfile: src/Bdaya.BLCIRM.HttpApi.Host/Dockerfile

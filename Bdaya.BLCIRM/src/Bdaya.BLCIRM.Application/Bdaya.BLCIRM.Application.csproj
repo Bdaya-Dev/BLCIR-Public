@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>    
+    <RootNamespace>Bdaya.BLCIRM</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Bdaya.BLCIRM.Application.Mapping\Bdaya.BLCIRM.Application.Mapping.csproj" />
+    <ProjectReference Include="..\Bdaya.BLCIRM.Domain\Bdaya.BLCIRM.Domain.csproj" />
+    <ProjectReference Include="..\Bdaya.BLCIRM.Application.Contracts\Bdaya.BLCIRM.Application.Contracts.csproj" />
+    <ProjectReference Include="..\Bdaya.BLCIRM.MeiliSearch\Bdaya.BLCIRM.MeiliSearch.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Bdaya.AutoMapper" Version="7.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+    <PackageReference Include="Volo.Abp.Account.Application" Version="7.1.1" />
+    <PackageReference Include="Volo.Abp.Identity.Application" Version="7.1.1" />
+    <PackageReference Include="Volo.Abp.PermissionManagement.Application" Version="7.1.1" />
+    <PackageReference Include="Volo.Abp.TenantManagement.Application" Version="7.1.1" />
+    <PackageReference Include="Volo.Abp.FeatureManagement.Application" Version="7.1.1" />
+    <PackageReference Include="Volo.Abp.SettingManagement.Application" Version="7.1.1" />
+  </ItemGroup>
+
+</Project>

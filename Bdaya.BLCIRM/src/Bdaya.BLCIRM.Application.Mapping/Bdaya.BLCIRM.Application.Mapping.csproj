@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="..\..\common.props" />
+
+	<PropertyGroup>
+		<RootNamespace>Bdaya.BLCIRM</RootNamespace>
+
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Bdaya.AutoMapper" Version="7.2.0" />
+
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Bdaya.BLCIRM.Domain\Bdaya.BLCIRM.Domain.csproj" />
+		<ProjectReference Include="..\Bdaya.BLCIRM.Application.Contracts\Bdaya.BLCIRM.Application.Contracts.csproj" />
+	</ItemGroup>
+</Project>
